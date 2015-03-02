@@ -1,0 +1,9 @@
+
+This table contains an average value of 3 measurements of execution times in milli seconds.
+
+threads\sync |	no sync	synchronize	reentered lock
+----------------------------------------------------------
+1 thread	  |	7.6340	30.0949		25.5583
+2 threads	  |	0.7900	16.7285		19.1729
+3 threads	  |	0.7518	33.3770		25.2093
+4 threads	  |	1.6846	62.0211		51.9214
