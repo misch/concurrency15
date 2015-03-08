@@ -12,15 +12,14 @@ public class Cook implements Runnable {
 			try {
 				refill();
 			} catch (InterruptedException e) {
-				e.printStackTrace();
+				System.out.println("Cook has been interrupted.");
 			}
 		}
 	}
 	
-	public void refill() throws InterruptedException{
+	private void refill() throws InterruptedException{
 		pot.refillPot.acquire(); 	// wait until someone (a Savage) gives the signal to refill the pot
 		System.out.println("Refilling...");		// refill the pot
 		pot.portionCount.release(pot.capacity); 
 	}
-	
 }
