@@ -1,5 +1,10 @@
 package assig1;
 
+/**
+ * This class is an implementation of the abstract class {@link MyThread}.
+ * @author Misch
+ *
+ */
 public class IncThread extends MyThread {
 	
 	public IncThread(Counter counter){
@@ -10,6 +15,9 @@ public class IncThread extends MyThread {
 		super(counter, syncOption);
 	}
 
+	/**
+	 * Increase the {@link Counter}.
+	 */
 	@Override
 	public void modifyCounter() {
 		int counterValue = counter.getValue();

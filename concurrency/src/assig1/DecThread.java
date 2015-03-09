@@ -1,5 +1,10 @@
 package assig1;
 
+/**
+ * This class is an implementation of the abstract class {@link MyThread}.
+ * @author Misch
+ *
+ */
 public class DecThread extends MyThread {
 
 	public DecThread(Counter counter) {
@@ -10,6 +15,9 @@ public class DecThread extends MyThread {
 		super(counter, syncOption);
 	}
 
+	/**
+	 * Decrease the {@link Counter}.
+	 */
 	@Override
 	public void modifyCounter() {
 		int counterValue = counter.getValue();

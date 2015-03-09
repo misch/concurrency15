@@ -5,6 +5,11 @@ import java.util.ArrayList;
 
 import assig1.MyThread.SyncOption;
 
+/**
+ * Contains a main method to start different threads that share one {@link Counter} in different synchronization modes.
+ * @author Misch
+ *
+ */
 public class Ex1 {
 	public static void main(String args[]) throws InterruptedException, FileNotFoundException{
 

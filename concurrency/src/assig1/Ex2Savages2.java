@@ -2,6 +2,11 @@ package assig1;
 
 import java.util.ArrayList;
 
+/**
+ * Contains the main method to start some AlwaysHungrySavages and a Cook thread.
+ * @author Misch
+ *
+ */
 public class Ex2Savages2 {
 
 	public static final int SAVAGES = 20;
