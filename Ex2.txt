@@ -1,0 +1,25 @@
+Informal proof of why the constraints are fullfilled
+----------------------------------------------------
+
+- When a savage eats, he takes a portion from the pot if the pot still has at least one available.
+This happens when the savage calls acquire() on the portionCount-Semaphore in the method eat() of the class Savage.
+
+- If the pot is empty the savage orders the cook to refill the pot and waits until this is full again.
+In the eat()-method of the Savage class, the Savage first "locks" the pot by calling "eatFromPot.acquire()". If the pot is empty, he gives a signal to the Cook by calling "refillPot.release()". The Cook calls in his run()-method the refill()-method which waits for this signal ("refillPot.acquire()").
+
+After giving this signal to the Cook, the Savage waits until there's again a portion in the pot by calling portionCount.acquire().
+
+- The cook does only full refills of the pot.
+In the refill()-method in the Cook class, there are as many permits release as the capacity of the pot is ("pot.portionCount.release(pot.capacity);")
+
+
+Fairness reasoning
+------------------
+
+In the implementation of the always hungry savages, fairness is provided through a shared one-write/many-read data structure. It is represented by a static int-array "eatingRounds" in the Savage class. The array has one position for each Savage thread and for each thread the current eating-round is stored.
+
+In the class AlwaysHungrySavage it is then in each iteration of the loop inside the run()-method asked if the thread is allowed to eat. This is evaluated by checking if there's maybe another thread who has not yet eaten as many times as the current thread.
+
+Drawbacks: 
+ - There might be some issues if the maximal int-value is reached...
+ - Some capacity is wasted by threads who are just checking whether they can eat.
