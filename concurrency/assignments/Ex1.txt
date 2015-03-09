@@ -1,4 +1,4 @@
-This table contains an average value of 3 measurements of execution times in ms.
+This table contains an average value of 3 measurements of execution times in ms. For a visualization, see also measurementsPlot.png
 
 threads\sync |	no sync	synchronize	reentered lock
 ----------------------------------------------------------
