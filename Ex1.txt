@@ -1,5 +1,4 @@
-
-This table contains an average value of 3 measurements of execution times in milli seconds.
+This table contains an average value of 3 measurements of execution times in ms.
 
 threads\sync |	no sync	synchronize	reentered lock
 ----------------------------------------------------------
@@ -7,3 +6,18 @@ threads\sync |	no sync	synchronize	reentered lock
 2 threads	  |	0.7900	16.7285		19.1729
 3 threads	  |	0.7518	33.3770		25.2093
 4 threads	  |	1.6846	62.0211		51.9214
+
+
+speedup with reentered lock instead of "synchronize"	
+----------------------------------------------------------
+1 thread:	1.1775
+2 threads:	0.8725
+3 threads: 1.3240
+4 threads: 1.1945
+
+
+specifications
+--------------
+
+Operating system: Windows 7 Professional SP1, 64bit.
+Processors: 4 cores; Intel(R) Core(TM) i7-4600U CPU @ 2.10 GHz
