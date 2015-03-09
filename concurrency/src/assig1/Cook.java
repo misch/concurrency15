@@ -13,6 +13,7 @@ public class Cook implements Runnable {
 				refill();
 			} catch (InterruptedException e) {
 				System.out.println("Cook has been interrupted.");
+				break;
 			}
 		}
 	}
