@@ -2,14 +2,17 @@ Informal proof of why the constraints are fullfilled
 ----------------------------------------------------
 
 - When a savage eats, he takes a portion from the pot if the pot still has at least one available.
+	
 This happens when the savage calls acquire() on the portionCount-Semaphore in the method eat() of the class Savage.
 
 - If the pot is empty the savage orders the cook to refill the pot and waits until this is full again.
+
 In the eat()-method of the Savage class, the Savage first "locks" the pot by calling "eatFromPot.acquire()". If the pot is empty, he gives a signal to the Cook by calling "refillPot.release()". The Cook calls in his run()-method the refill()-method which waits for this signal ("refillPot.acquire()").
 
 After giving this signal to the Cook, the Savage waits until there's again a portion in the pot by calling portionCount.acquire().
 
 - The cook does only full refills of the pot.
+
 In the refill()-method in the Cook class, there are as many permits release as the capacity of the pot is ("pot.portionCount.release(pot.capacity);")
 
 
