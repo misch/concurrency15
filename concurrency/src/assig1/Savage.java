@@ -1,7 +1,7 @@
 package assig1;
 
 public class Savage implements Runnable {
-	private int id;
+	protected int id;
 	private Pot pot;
 
 	public Savage(Pot pot, int i) {
@@ -18,7 +18,7 @@ public class Savage implements Runnable {
 		}
 	}
 
-	private void eat() throws InterruptedException {
+	protected void eat() throws InterruptedException {
 		pot.eatFromPot.acquire(); 	// wait until the pot is available (noone else
 							 		// is eating from the pot)
 
