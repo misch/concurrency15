@@ -3,7 +3,7 @@ package assig2;
 import java.util.ArrayList;
 
 public class Ex1 {
-	static int nThreads = 20;
+	static int nThreads = 16;
 	static FilterLock lock = new FilterLock(nThreads);
 	static Counter counter = new Counter(lock);
 	static int[] counterAccess = new int[nThreads];

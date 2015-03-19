@@ -15,14 +15,15 @@ public class Incrementor implements Runnable {
 	@Override
 	public void run() {
 		while(true){
-			counter.lock.lock();
+			counter.lock.lock(threadID);
 			if(counter.value < COUNTER_LIMIT){
 				counter.increment();
 				counterAccess[threadID]++;
 			} else{
+				counter.lock.unlock(threadID);
 				break;
 			}
-			counter.lock.unlock();
+			counter.lock.unlock(threadID);
 		}
 	}
 

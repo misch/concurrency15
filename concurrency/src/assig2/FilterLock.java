@@ -23,11 +23,28 @@ public class FilterLock {
 		this.victim = new AtomicIntegerArray(threads);
 	}
 	
-	public void lock(){
-		//TODO
+	public void lock(int threadID){
+		for (int lvl = 1; lvl < threads; lvl++){
+			level.set(threadID, lvl);
+			victim.set(lvl, threadID);
+			
+			boolean iAmTheVictim = true;
+			boolean thereIsAMoreImportantBitch = true;
+			
+			while(iAmTheVictim && thereIsAMoreImportantBitch){
+				iAmTheVictim = (victim.get(lvl) == threadID);
+				
+				thereIsAMoreImportantBitch = false;
+				for (int bitch = 0; bitch < level.length(); bitch++){
+					if (bitch != threadID && level.get(bitch) >= lvl){
+						thereIsAMoreImportantBitch = true;
+					}
+				}
+			}
+		}
 	}
 	
-	public void unlock(){
-		//TODO
+	public void unlock(int threadID){
+		level.set(threadID, 0);
 	}
 }
