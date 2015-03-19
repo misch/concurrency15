@@ -9,5 +9,11 @@ public class Counter {
 	int value;
 	FilterLock lock;
 	
-	//TODO
+	public Counter(FilterLock lock){
+		this.lock = lock;
+	}
+	
+	public void increment(){
+		value++;
+	}
 }

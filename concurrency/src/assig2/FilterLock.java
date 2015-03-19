@@ -1,5 +1,6 @@
 package assig2;
 
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicIntegerArray;
 
 /**
@@ -11,10 +12,10 @@ public class FilterLock {
 	private int threads;
 	
 	/** holds current level for each thread */
-	volatile AtomicIntegerArray level;
+	AtomicIntegerArray level;
 	
 	/** holds identifier of last thread that entered one level */
-	volatile AtomicIntegerArray victim;
+	AtomicIntegerArray victim;
 	
 	public FilterLock(int threads){
 		this.threads = threads;
