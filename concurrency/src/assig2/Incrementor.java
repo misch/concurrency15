@@ -16,7 +16,7 @@ public class Incrementor implements Runnable {
 	public void run() {
 		while(true){
 			counter.lock.lock(threadID);
-			if(counter.value < COUNTER_LIMIT){
+			if(counter.getValue() < COUNTER_LIMIT){
 				counter.increment();
 				counterAccess[threadID]++;
 			} else{

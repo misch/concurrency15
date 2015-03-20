@@ -3,13 +3,25 @@ package assig2;
 import java.util.ArrayList;
 
 public class Ex1 {
-	static int nThreads = 12;
-	static FilterLock lock = new FilterLock(nThreads);
-	static Counter counter = new Counter(lock);
-	static int[] counterAccess = new int[nThreads];
+	static int[] counterAccess;
 	
 	public static void main (String[] args) throws InterruptedException{
+		if (args.length != 2){
+			System.out.println("Please enter 2 program arguments: #threads [int] volatile [true/false]");
+		}
 		ArrayList<Thread> incThreads = new ArrayList<Thread>();
+		int nThreads = Integer.parseInt(args[0]);
+		FilterLock lock = new FilterLock(nThreads);
+		
+		counterAccess = new int[nThreads];
+		boolean volatileCounter = Boolean.parseBoolean(args[1]);
+		
+		Counter counter;
+		if (volatileCounter){
+			counter = new VolatileCounter(lock);
+		} else{
+			counter = new NonVolatileCounter(lock);
+		}
 		
 		// create threads
 		for (int i = 0; i < nThreads; i++){
@@ -30,8 +42,12 @@ public class Ex1 {
 		long endTime = System.nanoTime();
 		
 		// print statistics
-		System.out.println("Counter value: " + counter.value);
+		System.out.println("** SETTINGS **");
+		String exerciseCase = (volatileCounter ? "volatile " : "non-volatile ") + "counter"; 
+		System.out.println("Case: " + exerciseCase );
+		System.out.println("Counter value: " + counter.getValue());
 		System.out.println("#threads: " + nThreads);
+		System.out.println("\n** MEASUREMENTS **");
 		System.out.println("Accesses: " + accessesToString());
 		System.out.println("Lowest number of accesses: " + getMinAccesses());
 		System.out.println("Highest number of accesses: " + getMaxAccesses());
