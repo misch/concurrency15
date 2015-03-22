@@ -6,8 +6,9 @@ public class Ex1 {
 	static int[] counterAccess;
 	
 	public static void main (String[] args) throws InterruptedException{
-		if (args.length != 2){
-			System.out.println("Please enter 2 program arguments: #threads [int] volatile [true/false]");
+		if (args.length != 3){
+			System.out.println("Please enter 3 program arguments: #threads [int] volatile [true/false] solarisAffinity [true/false]");
+			System.exit(0);
 		}
 		ArrayList<Thread> incThreads = new ArrayList<Thread>();
 		int nThreads = Integer.parseInt(args[0]);
@@ -23,6 +24,11 @@ public class Ex1 {
 			counter = new NonVolatileCounter(lock);
 		}
 		
+		boolean solarisAffinity = Boolean.parseBoolean(args[2]);
+		if(solarisAffinity){
+			setSolarisAffinity();
+		}
+
 		// create threads
 		for (int i = 0; i < nThreads; i++){
 			Thread incThread = new Thread(new Incrementor(counter, i, counterAccess));
@@ -78,5 +84,21 @@ public class Ex1 {
 			max = (i > max ? i : max);
 		}
 		return max;
+	}
+
+	public static void setSolarisAffinity(){
+		try {
+			// retrieve process id
+			String pid_name = java.lang.management.ManagementFactory.getRuntimeMXBean().getName();
+			String[] pid_array = pid_name.split("@");
+			int pid = Integer.parseInt(pid_array[0]);
+			// random processor
+			int processor = new java.util.Random().nextInt(32);
+			// Set process affinity to one processor ( on Solaris )
+			Process p = Runtime.getRuntime().exec("/usr/sbin/pbind -b" + processor +" "+ pid );
+			p.waitFor();
+		} catch ( Exception err ) {
+			err.printStackTrace();
+		}
 	}
 }
