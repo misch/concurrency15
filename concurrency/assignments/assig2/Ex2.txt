@@ -1,0 +1,3 @@
+Assume we have three threads 1, 2 and 3. Therefore we have the levels 0 [not interested], 1 and 2, level 3 would correspond to the critical section.
+
+In the following example, thread 1 is not guaranteed to get into the critical section:
