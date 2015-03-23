@@ -1,8 +1,43 @@
-Todo: justify answers.
+** Figure 1 **
+Linearizable (and therefore sequentially consistent) because the given history 
+	B r.write(1)
+	A r.read()
+	C r.write(2)
+	A r:1
+	C r:void
+	B r:void
+	B r.read()
+	B r:2
 
+is equivalent to the following real-time order preventing legal sequential history 
+	B r.write(1)
+	B r:void
+	A r.read()
+	A r:1
+	C r.write(2)
+	C r:void
+	B r.read()
+	B r:2
 
-Figure 1:
-Linearizable (and therefore sequentially consistent)
+** Figure 2 **
+Not sequentially consistent (and therefore not linearizable). The given history has no pending invocations that could be descarded or extended by appending reponses. To be sequentially consistent, the given history should be equivalent to a legal sequential history. The history is
 
-Figure 2:
-Not sequentially consistent (and therefore not linearizable)
+	B r.write(1)
+	A r.write(2)
+	B r:void
+	B r.read()
+	A r:void
+	B r:2
+	B r.read()
+	B r:1
+
+and the restrictions to threads are given by
+
+B:	r.write(1) 	A: 	r.write(2)
+	r:void			r:void
+	r.read()		
+	r:2
+	r.read()
+	r:1
+
+and no way of putting it together to a sequential history would make the history legal because the order of a single thread B cannot be changed. But thread B wants to read the value 1 at the end and before this, it wants to read the value 2. This requires that thread A will write 2 to the variable before. The writing of value 1 happens in B before reading the value 2, so at the end, it's not possible for thread B to read the value 1.
