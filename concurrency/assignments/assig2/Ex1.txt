@@ -1,4 +1,21 @@
-### Single processor ###
+ ### Observations ###
+
+** Volatile vs. Non-volatile counter **
+Surprisingly, the difference in execution time when comparing the non-volatile- and the volatile counter (that is, the variable "value" in the class assig2.Counter.java), is almost not noticeable. I am not sure how to explain that, as in the lecture some other results were suggested.
+
+** One vs. many proessors **
+Setting the affinity to only one processor on the sunfire machine caused the execution time to increase dramatically. To get faster results, I had to use much lower counter thresholds. In the here shown data for the single-processor, the counter was only incremented until value of 2'000 (indicated in the below statistics).
+
+** Fairness **
+In the multi-processor experiment, the workload was quite well balanced. All the threads had roughly the same number of accesses to the Counter. This was not at all the case in the single-processor experiment. There, most of the time one thread did the most, if not all, of the increments. This might be caused by the simple fact that with multiple processors there can be launched many threads at the very same time that are all ready to take the lock whereas with one processor, not all of the threads can be active at the very same moment and it might therefore more easily happen that there's no other thread at the very moment who is ready to take the lock. 
+
+** Number of threads **
+As expected, a bigger number of threads does not accelerate the program but instead introduces overloads and therefore slows the whole execution. In all the experiments, the smallest number of threads yield the fastest execution time. This is a very significant example to see that shared recources - or better, parts of a program that can only be executed sequentially, like the counter increments - are a bottleneck in concurrent applications.
+
+
+Statistics:
+
+### Multi-processor ###
 
 
 ** Case: non-volatile counter
@@ -117,8 +134,7 @@ Highest number of accesses: 18759
 Execution time: 1317.135828 ms
 
 
-
-### Multi-processor ###
+### Single processor (with affinity set) ###
 
 
 ** Case: volatile counter
@@ -165,7 +181,7 @@ Highest number of accesses: 2000
 Execution time: 111.87907899999999 ms
 
 
-** Case: volatile counter
+** Case: non-volatile counter
 ** Counter value: 2000
 
 
