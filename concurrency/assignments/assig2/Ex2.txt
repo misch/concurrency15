@@ -1,3 +1,51 @@
-Assume we have three threads 1, 2 and 3. Therefore we have the levels 0 [not interested], 1 and 2, level 3 would correspond to the critical section.
+Assume we have three threads |1|, |2| and |3|. Therefore we have the levels 0 [not interested], 1 and 2, level 3 would correspond to the critical section.
 
-In the following example, thread 1 is not guaranteed to get into the critical section:
+In the following example, thread |1| is overtaken by threads |2| and |3| by an inifinite number of times:
+
+
+1) |1| is interested and enters level 1.
+
+	level 1: |1| | | victim = |1|
+	level 2: | | |
+
+2) |2| is interested and enters level 1.
+	
+	level 1: |1|2| | victim = |2|
+	level 2: | | |
+
+3) |3| is interested and enters level 1.
+	
+	level 1: |1|2|3| victim = |3|
+	level 2: | | |
+
+4) Because |3| entered level 1 and declared itself as the victim, |2| is not a victim anymore and can move on to level 2.
+	
+	level 1: |1|3| | 	victim = |3|
+	level 2: |2| | 		victim = |2|
+
+5) |2| is the only thread on a level >= 2 and can move on to the critical section and after the execution, it unlocks.
+	
+	level 1: |1|3| | 	victim = |3|
+	level 2: | | | 		
+
+6) thread |2| is interested in reentering the critical section and enters level 1.
+	
+	level 1: |1|3|2| 	victim = |2|
+	level 2: | | | 		
+
+7) Because |2| entered level 1 and declared itself as the victim, |3| is not a victim anymore and can move on to level 2.
+	
+	level 1: |1|2| | 	victim = |2|
+	level 2: |3| | 		victim = |3|
+
+8) |3| is the only thread on a level >= 2 and can move on to the critical section and after the execution, it unlocks.
+	
+	level 1: |1|2| | 	victim = |2|
+	level 2: | | | 		
+
+9) thread |3| is interested in reentering the critical section and enters level 1.	
+	
+	level 1: |1|2|3| 	victim = |3|
+	level 2: | | | 		
+
+... continue at 4) ...
