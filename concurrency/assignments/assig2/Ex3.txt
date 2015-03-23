@@ -1,0 +1,8 @@
+Todo: justify answers.
+
+
+Figure 1:
+Linearizable (and therefore sequentially consistent)
+
+Figure 2:
+Not sequentially consistent (and therefore not linearizable)
