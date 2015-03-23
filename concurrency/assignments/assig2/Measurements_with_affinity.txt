@@ -1,0 +1,170 @@
+** SETTINGS **
+Case: volatile counter
+Counter value: 2000
+#threads: 2
+
+** MEASUREMENTS **
+Accesses: [2000|0|]
+Lowest number of accesses: 0
+Highest number of accesses: 2000
+Execution time: 75.71964299999999 ms
+** SETTINGS **
+Case: volatile counter
+Counter value: 2000
+#threads: 2
+
+** MEASUREMENTS **
+Accesses: [2000|0|]
+Lowest number of accesses: 0
+Highest number of accesses: 2000
+Execution time: 75.821536 ms
+** SETTINGS **
+Case: volatile counter
+Counter value: 2000
+#threads: 4
+
+** MEASUREMENTS **
+Accesses: [2000|0|0|0|]
+Lowest number of accesses: 0
+Highest number of accesses: 2000
+Execution time: 80.952547 ms
+** SETTINGS **
+Case: volatile counter
+Counter value: 2000
+#threads: 4
+
+** MEASUREMENTS **
+Accesses: [2000|0|0|0|]
+Lowest number of accesses: 0
+Highest number of accesses: 2000
+Execution time: 80.754936 ms
+** SETTINGS **
+Case: volatile counter
+Counter value: 2000
+#threads: 8
+
+** MEASUREMENTS **
+Accesses: [2000|0|0|0|0|0|0|0|]
+Lowest number of accesses: 0
+Highest number of accesses: 2000
+Execution time: 88.463111 ms
+** SETTINGS **
+Case: volatile counter
+Counter value: 2000
+#threads: 8
+
+** MEASUREMENTS **
+Accesses: [2000|0|0|0|0|0|0|0|]
+Lowest number of accesses: 0
+Highest number of accesses: 2000
+Execution time: 88.914509 ms
+** SETTINGS **
+Case: volatile counter
+Counter value: 2000
+#threads: 16
+
+** MEASUREMENTS **
+Accesses: [37|0|0|0|0|0|0|1963|0|0|0|0|0|0|0|0|]
+Lowest number of accesses: 0
+Highest number of accesses: 1963
+Execution time: 112.684249 ms
+** SETTINGS **
+Case: volatile counter
+Counter value: 2000
+#threads: 16
+
+** MEASUREMENTS **
+Accesses: [2000|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|]
+Lowest number of accesses: 0
+Highest number of accesses: 2000
+Execution time: 111.87907899999999 ms
+** SETTINGS **
+Case: non-volatile counter
+Counter value: 2000
+#threads: 2
+
+** MEASUREMENTS **
+Accesses: [2000|0|]
+Lowest number of accesses: 0
+Highest number of accesses: 2000
+Execution time: 75.734466 ms
+** SETTINGS **
+Case: non-volatile counter
+Counter value: 2000
+#threads: 2
+
+** MEASUREMENTS **
+Accesses: [2000|0|]
+Lowest number of accesses: 0
+Highest number of accesses: 2000
+Execution time: 75.688296 ms
+** SETTINGS **
+Case: non-volatile counter
+Counter value: 2000
+#threads: 4
+
+** MEASUREMENTS **
+Accesses: [2000|0|0|0|]
+Lowest number of accesses: 0
+Highest number of accesses: 2000
+Execution time: 80.851053 ms
+** SETTINGS **
+Case: non-volatile counter
+Counter value: 2000
+#threads: 4
+
+** MEASUREMENTS **
+Accesses: [2000|0|0|0|]
+Lowest number of accesses: 0
+Highest number of accesses: 2000
+Execution time: 80.74324299999999 ms
+** SETTINGS **
+Case: non-volatile counter
+Counter value: 2000
+#threads: 8
+
+** MEASUREMENTS **
+Accesses: [1238|104|105|104|116|104|114|115|]
+Lowest number of accesses: 104
+Highest number of accesses: 1238
+Execution time: 80381.12550699999 ms
+** SETTINGS **
+Case: non-volatile counter
+Counter value: 2000
+#threads: 8
+
+** MEASUREMENTS **
+Accesses: [2000|0|0|0|0|0|0|0|]
+Lowest number of accesses: 0
+Highest number of accesses: 2000
+Execution time: 88.430816 ms
+** SETTINGS **
+Case: non-volatile counter
+Counter value: 2000
+#threads: 8
+
+** MEASUREMENTS **
+Accesses: [2000|0|0|0|0|0|0|0|]
+Lowest number of accesses: 0
+Highest number of accesses: 2000
+Execution time: 88.78233999999999 ms
+** SETTINGS **
+Case: non-volatile counter
+Counter value: 2000
+#threads: 16
+
+** MEASUREMENTS **
+Accesses: [2000|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|]
+Lowest number of accesses: 0
+Highest number of accesses: 2000
+Execution time: 111.866529 ms
+** SETTINGS **
+Case: non-volatile counter
+Counter value: 2000
+#threads: 16
+
+** MEASUREMENTS **
+Accesses: [2000|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|]
+Lowest number of accesses: 0
+Highest number of accesses: 2000
+Execution time: 111.78976899999999 ms

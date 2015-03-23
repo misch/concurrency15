@@ -1,0 +1,220 @@
+** SETTINGS **
+Case: non-volatile counter
+Counter value: 300000
+#threads: 1
+
+** MEASUREMENTS **
+Accesses: [300000|]
+Lowest number of accesses: 300000
+Highest number of accesses: 300000
+Execution time: 150.34386899999998 ms
+** SETTINGS **
+Case: non-volatile counter
+Counter value: 300000
+#threads: 1
+
+** MEASUREMENTS **
+Accesses: [300000|]
+Lowest number of accesses: 300000
+Highest number of accesses: 300000
+Execution time: 150.620699 ms
+** SETTINGS **
+Case: non-volatile counter
+Counter value: 300000
+#threads: 2
+
+** MEASUREMENTS **
+Accesses: [149636|150364|]
+Lowest number of accesses: 149636
+Highest number of accesses: 150364
+Execution time: 219.562435 ms
+** SETTINGS **
+Case: non-volatile counter
+Counter value: 300000
+#threads: 2
+
+** MEASUREMENTS **
+Accesses: [149601|150399|]
+Lowest number of accesses: 149601
+Highest number of accesses: 150399
+Execution time: 219.94083799999999 ms
+** SETTINGS **
+Case: non-volatile counter
+Counter value: 300000
+#threads: 3
+
+** MEASUREMENTS **
+Accesses: [100405|99629|99966|]
+Lowest number of accesses: 99629
+Highest number of accesses: 100405
+Execution time: 219.229646 ms
+** SETTINGS **
+Case: non-volatile counter
+Counter value: 300000
+#threads: 3
+
+** MEASUREMENTS **
+Accesses: [99995|100399|99606|]
+Lowest number of accesses: 99606
+Highest number of accesses: 100399
+Execution time: 218.588403 ms
+** SETTINGS **
+Case: non-volatile counter
+Counter value: 300000
+#threads: 4
+
+** MEASUREMENTS **
+Accesses: [74897|75153|75291|74659|]
+Lowest number of accesses: 74659
+Highest number of accesses: 75291
+Execution time: 288.63685499999997 ms
+** SETTINGS **
+Case: non-volatile counter
+Counter value: 300000
+#threads: 4
+
+** MEASUREMENTS **
+Accesses: [75201|74840|74885|75074|]
+Lowest number of accesses: 74840
+Highest number of accesses: 75201
+Execution time: 290.522442 ms
+** SETTINGS **
+Case: non-volatile counter
+Counter value: 300000
+#threads: 8
+
+** MEASUREMENTS **
+Accesses: [37498|37502|37502|37501|37499|37497|37502|37499|]
+Lowest number of accesses: 37497
+Highest number of accesses: 37502
+Execution time: 544.881617 ms
+** SETTINGS **
+Case: non-volatile counter
+Counter value: 300000
+#threads: 8
+
+** MEASUREMENTS **
+Accesses: [37504|37497|37498|37502|37499|37497|37500|37503|]
+Lowest number of accesses: 37497
+Highest number of accesses: 37504
+Execution time: 539.968366 ms
+** SETTINGS **
+Case: non-volatile counter
+Counter value: 300000
+#threads: 16
+
+** MEASUREMENTS **
+Accesses: [18757|18759|18757|18758|18758|18757|18756|18758|18638|18758|18757|18757|18757|18757|18758|18758|]
+Lowest number of accesses: 18638
+Highest number of accesses: 18759
+Execution time: 1343.169832 ms
+** SETTINGS **
+Case: non-volatile counter
+Counter value: 300000
+#threads: 16
+
+** MEASUREMENTS **
+Accesses: [18758|18676|18753|18754|18755|18756|18755|18755|18754|18756|18754|18756|18755|18754|18755|18754|]
+Lowest number of accesses: 18676
+Highest number of accesses: 18758
+Execution time: 1350.342038 ms
+** SETTINGS **
+Case: volatile counter
+Counter value: 300000
+#threads: 2
+
+** MEASUREMENTS **
+Accesses: [149776|150224|]
+Lowest number of accesses: 149776
+Highest number of accesses: 150224
+Execution time: 216.273238 ms
+** SETTINGS **
+Case: volatile counter
+Counter value: 300000
+#threads: 2
+
+** MEASUREMENTS **
+Accesses: [149712|150288|]
+Lowest number of accesses: 149712
+Highest number of accesses: 150288
+Execution time: 216.735289 ms
+** SETTINGS **
+Case: volatile counter
+Counter value: 300000
+#threads: 3
+
+** MEASUREMENTS **
+Accesses: [100047|99505|100448|]
+Lowest number of accesses: 99505
+Highest number of accesses: 100448
+Execution time: 234.70592299999998 ms
+** SETTINGS **
+Case: volatile counter
+Counter value: 300000
+#threads: 3
+
+** MEASUREMENTS **
+Accesses: [100477|99809|99714|]
+Lowest number of accesses: 99714
+Highest number of accesses: 100477
+Execution time: 234.83372799999998 ms
+** SETTINGS **
+Case: volatile counter
+Counter value: 300000
+#threads: 4
+
+** MEASUREMENTS **
+Accesses: [74909|75046|74896|75149|]
+Lowest number of accesses: 74896
+Highest number of accesses: 75149
+Execution time: 289.908318 ms
+** SETTINGS **
+Case: volatile counter
+Counter value: 300000
+#threads: 4
+
+** MEASUREMENTS **
+Accesses: [74911|75048|74917|75124|]
+Lowest number of accesses: 74911
+Highest number of accesses: 75124
+Execution time: 290.352348 ms
+** SETTINGS **
+Case: volatile counter
+Counter value: 300000
+#threads: 8
+
+** MEASUREMENTS **
+Accesses: [37499|37503|37503|37500|37497|37496|37499|37503|]
+Lowest number of accesses: 37496
+Highest number of accesses: 37503
+Execution time: 539.678594 ms
+** SETTINGS **
+Case: volatile counter
+Counter value: 300000
+#threads: 8
+
+** MEASUREMENTS **
+Accesses: [37523|37527|37341|37525|37524|37517|37524|37519|]
+Lowest number of accesses: 37341
+Highest number of accesses: 37527
+Execution time: 533.039994 ms
+** SETTINGS **
+Case: volatile counter
+Counter value: 300000
+#threads: 16
+
+** MEASUREMENTS **
+Accesses: [18754|18709|18754|18754|18753|18751|18753|18752|18753|18754|18752|18752|18754|18752|18752|18751|]
+Lowest number of accesses: 18709
+Highest number of accesses: 18754
+Execution time: 1342.479052 ms
+** SETTINGS **
+Case: volatile counter
+Counter value: 300000
+#threads: 16
+
+** MEASUREMENTS **
+Accesses: [18759|18759|18758|18759|18757|18758|18757|18758|18756|18758|18634|18757|18757|18758|18757|18758|]
+Lowest number of accesses: 18634
+Highest number of accesses: 18759
+Execution time: 1317.135828 ms
