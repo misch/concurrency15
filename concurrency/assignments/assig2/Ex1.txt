@@ -1,0 +1,209 @@
+### Single processor ###
+
+
+** Case: non-volatile counter
+** Counter value: 300000
+
+#threads: 1
+Lowest number of accesses: 300000
+Highest number of accesses: 300000
+Execution time: 150.34386899999998 ms
+
+Lowest number of accesses: 300000
+Highest number of accesses: 300000
+Execution time: 150.620699 ms
+
+
+#threads: 2
+Lowest number of accesses: 149636
+Highest number of accesses: 150364
+Execution time: 219.562435 ms
+
+Lowest number of accesses: 149601
+Highest number of accesses: 150399
+Execution time: 219.94083799999999 ms
+
+
+#threads: 3
+Lowest number of accesses: 99629
+Highest number of accesses: 100405
+Execution time: 219.229646 ms
+
+Lowest number of accesses: 99606
+Highest number of accesses: 100399
+Execution time: 218.588403 ms
+
+
+#threads: 4
+Lowest number of accesses: 74659
+Highest number of accesses: 75291
+Execution time: 288.63685499999997 ms
+
+Lowest number of accesses: 74840
+Highest number of accesses: 75201
+Execution time: 290.522442 ms
+
+
+#threads: 8
+Lowest number of accesses: 37497
+Highest number of accesses: 37502
+Execution time: 544.881617 ms
+
+Lowest number of accesses: 37497
+Highest number of accesses: 37504
+Execution time: 539.968366 ms
+
+
+#threads: 16
+Lowest number of accesses: 18638
+Highest number of accesses: 18759
+Execution time: 1343.169832 ms
+
+Lowest number of accesses: 18676
+Highest number of accesses: 18758
+Execution time: 1350.342038 ms
+
+
+** Case: volatile counter
+** Counter value: 300000
+
+#threads: 2
+Lowest number of accesses: 149776
+Highest number of accesses: 150224
+Execution time: 216.273238 ms
+
+Lowest number of accesses: 149712
+Highest number of accesses: 150288
+Execution time: 216.735289 ms
+
+
+#threads: 3
+Lowest number of accesses: 99505
+Highest number of accesses: 100448
+Execution time: 234.70592299999998 ms
+
+Lowest number of accesses: 99714
+Highest number of accesses: 100477
+Execution time: 234.83372799999998 ms
+
+
+#threads: 4
+Lowest number of accesses: 74896
+Highest number of accesses: 75149
+Execution time: 289.908318 ms
+
+Lowest number of accesses: 74911
+Highest number of accesses: 75124
+Execution time: 290.352348 ms
+
+
+#threads: 8
+Lowest number of accesses: 37496
+Highest number of accesses: 37503
+Execution time: 539.678594 ms
+
+Lowest number of accesses: 37341
+Highest number of accesses: 37527
+Execution time: 533.039994 ms
+
+
+#threads: 16
+Lowest number of accesses: 18709
+Highest number of accesses: 18754
+Execution time: 1342.479052 ms
+
+Lowest number of accesses: 18634
+Highest number of accesses: 18759
+Execution time: 1317.135828 ms
+
+
+
+### Multi-processor ###
+
+
+** Case: volatile counter
+** Counter value: 2000
+
+
+#threads: 2
+Lowest number of accesses: 0
+Highest number of accesses: 2000
+Execution time: 75.71964299999999 ms
+
+Lowest number of accesses: 0
+Highest number of accesses: 2000
+Execution time: 75.821536 ms
+
+
+#threads: 4
+Lowest number of accesses: 0
+Highest number of accesses: 2000
+Execution time: 80.952547 ms
+
+Lowest number of accesses: 0
+Highest number of accesses: 2000
+Execution time: 80.754936 ms
+
+
+#threads: 8
+Lowest number of accesses: 0
+Highest number of accesses: 2000
+Execution time: 88.463111 ms
+
+Lowest number of accesses: 0
+Highest number of accesses: 2000
+Execution time: 88.914509 ms
+
+
+#threads: 16
+Lowest number of accesses: 0
+Highest number of accesses: 1963
+Execution time: 112.684249 ms
+
+Lowest number of accesses: 0
+Highest number of accesses: 2000
+Execution time: 111.87907899999999 ms
+
+
+** Case: volatile counter
+** Counter value: 2000
+
+
+#threads: 2
+Lowest number of accesses: 0
+Highest number of accesses: 2000
+Execution time: 75.734466 ms
+
+Lowest number of accesses: 0
+Highest number of accesses: 2000
+Execution time: 75.688296 ms
+
+
+#threads: 4
+Lowest number of accesses: 0
+Highest number of accesses: 2000
+Execution time: 80.851053 ms
+
+Lowest number of accesses: 0
+Highest number of accesses: 2000
+Execution time: 80.74324299999999 ms
+
+
+#threads: 8
+Lowest number of accesses: 0
+Highest number of accesses: 2000
+Execution time: 88.430816 ms
+
+Lowest number of accesses: 0
+Highest number of accesses: 2000
+Execution time: 88.78233999999999 ms
+
+
+#threads: 16
+Lowest number of accesses: 0
+Highest number of accesses: 2000
+Execution time: 111.866529 ms
+
+Lowest number of accesses: 0
+Highest number of accesses: 2000
+Execution time: 111.78976899999999 ms
