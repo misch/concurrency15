@@ -1,6 +1,5 @@
 package assig2;
 
-import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicIntegerArray;
 
 /**
@@ -29,15 +28,15 @@ public class FilterLock {
 			victim.set(lvl, threadID);
 			
 			boolean iAmTheVictim = true;
-			boolean thereIsAMoreImportantBitch = true;
+			boolean thereIsAHigherLevelThread = true;
 			
-			while(iAmTheVictim && thereIsAMoreImportantBitch){
+			while(iAmTheVictim && thereIsAHigherLevelThread){
 				iAmTheVictim = (victim.get(lvl) == threadID);
 				
-				thereIsAMoreImportantBitch = false;
+				thereIsAHigherLevelThread = false;
 				for (int bitch = 0; bitch < level.length(); bitch++){
 					if (bitch != threadID && level.get(bitch) >= lvl){
-						thereIsAMoreImportantBitch = true;
+						thereIsAHigherLevelThread = true;
 					}
 				}
 			}
