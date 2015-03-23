@@ -1,3 +1,4 @@
+** UNFAIR SCENARIO **
 Assume we have three threads |1|, |2| and |3|. Therefore we have the levels 0 [not interested], 1 and 2, level 3 would correspond to the critical section.
 
 In the following example, thread |1| is overtaken by threads |2| and |3| by an inifinite number of times:
@@ -49,3 +50,6 @@ In the following example, thread |1| is overtaken by threads |2| and |3| by an i
 	level 2: | | | 		
 
 ... continue at 4) ...
+
+** HOW TO PROVIDE FAIRNESS **
+There are many ways how fairness could provided, for example the barrier mechanism discussed in the lab session that would cause each thread to wait for the next lock until every other thread has passed the critical section. In the discussed implementation, this was solved by placing a code snippet within the contnuously executed loop that would count the number of passed threads and set a flag when the number is equal to the total number of threads. Using this mechanism it could be ensured that every thread finishes the round before any other thread is starting a new one.
