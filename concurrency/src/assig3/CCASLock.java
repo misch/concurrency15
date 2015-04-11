@@ -52,7 +52,7 @@ public class CCASLock implements Lock {
 
 	@Override
 	public void unlock() {
-		// TODO Auto-generated method stub
+		state.set(0);
 
 	}
 
