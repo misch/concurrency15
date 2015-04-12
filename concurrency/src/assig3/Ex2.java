@@ -5,11 +5,16 @@ import java.util.ArrayList;
 public class Ex2 {
 
 	public static void main(String[] args) throws InterruptedException{
-		if(!(args.length == 1)){
-			System.out.println("Please enter a parameters: nThreads:[int]");
+		int nThreads;
+		if((args.length == 1)){
+
+			nThreads = Integer.parseInt(args[0]);
+		}else{
+			System.out.println("No number of threads was specified. Using default of: 2 threads.");
+			nThreads = 2;
 		}
 		
-		int nThreads = Integer.parseInt(args[0]);
+
 
 		int queueSize = 20;
 		int measureNTimes = 3;
