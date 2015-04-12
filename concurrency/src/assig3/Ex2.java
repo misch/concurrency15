@@ -21,8 +21,8 @@ public class Ex2 {
 		
 		ArrayList<Thread> threads = new ArrayList<Thread>();
 		for(int i = 0; i<nThreads/2; i++){
-			threads.add(new Thread(new EnqThread(sharedQueue)));
-			threads.add(new Thread(new DeqThread(sharedQueue)));
+			threads.add(new Thread(new EnqRunnable(sharedQueue)));
+			threads.add(new Thread(new DeqRunnable(sharedQueue)));
 		}
 		
 		long startTime = System.nanoTime();
@@ -37,6 +37,4 @@ public class Ex2 {
 		
 		System.out.println(util.TimeMeasure.getExecutionTime(startTime, endTime));
 	}
-	
-	
 }

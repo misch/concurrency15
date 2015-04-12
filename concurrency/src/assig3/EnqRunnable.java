@@ -1,10 +1,10 @@
 package assig3;
 
-public class EnqThread implements Runnable{
+public class EnqRunnable implements Runnable{
 	static final int N_ENQUEUES = 100000;
 	IQueue queue;
 	
-	public EnqThread(IQueue queue){
+	public EnqRunnable(IQueue queue){
 		this.queue = queue;
 	}
 	

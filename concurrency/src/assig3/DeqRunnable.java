@@ -1,10 +1,10 @@
 package assig3;
 
-public class DeqThread implements Runnable{
+public class DeqRunnable implements Runnable{
 	static final int N_DEQUEUES = 100000;
 	IQueue queue;
 	
-	public DeqThread(IQueue queue){
+	public DeqRunnable(IQueue queue){
 		this.queue = queue;
 	}
 	
