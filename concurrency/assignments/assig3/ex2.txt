@@ -1,3 +1,22 @@
+### Observations ###
+As expected, the lock-free version is the fastest one for 2 threads. In general, the implementation using two locks is faster than the one using only one lock for the head and tail of the queue. Using two locks brings a speedup between 1.31 (2 threads) and 3.14 (4 threads). This is not a surprising result since two locks allow the queue to be accessed by two threads (one enqueuer and one dequeuer) at the very same time, whereas the one lock implementation doesn't allow the queue to be accessed by two, threads simultaneously, even if they have different tasks that wouldn't interfere.
+
+### Statistics ###
+
+** Summary **
+
+This short table contains the average values of the first 3 runs of 100'000 enqueueings / dequeueings of the indicated number of threads.
+The queue size was 20.
+
+threads | two locks | one lock 	| lock-free
+2 		|  54.528 	|  71.612 	| 27.429
+4 		|  75.288 	| 236.280 	| ------
+8 		| 134.034 	| 313.634 	| ------
+
+
+
+** Full measurements **
+
 Two locks:
 
 #1: 	 99.236481 ms 	 (2 threads)
@@ -18,6 +37,7 @@ Lock-free (2 threads only):
 #2: 	 23.534114 ms 	 (2 threads)
 #3: 	 22.119632 ms 	 (2 threads)
 avg: 	27.49216733333333 ms
+
 Two locks:
 
 #1: 	 106.124836 ms 	 (4 threads)
@@ -38,6 +58,7 @@ Lock-free (2 threads only):
 #2: 	 23.681669 ms 	 (2 threads)
 #3: 	 22.027327 ms 	 (2 threads)
 avg: 	27.798814333333336 ms
+
 Two locks:
 
 #1: 	 156.62995899999999 ms 	 (8 threads)
@@ -58,6 +79,7 @@ Lock-free (2 threads only):
 #2: 	 23.659086 ms 	 (2 threads)
 #3: 	 22.034069 ms 	 (2 threads)
 avg: 	27.784927333333332 ms
+
 Two locks:
 
 #1: 	 99.431606 ms 	 (2 threads)
@@ -78,6 +100,7 @@ Lock-free (2 threads only):
 #2: 	 23.544307 ms 	 (2 threads)
 #3: 	 22.001628999999998 ms 	 (2 threads)
 avg: 	27.633301999999997 ms
+
 Two locks:
 
 #1: 	 108.446483 ms 	 (4 threads)
