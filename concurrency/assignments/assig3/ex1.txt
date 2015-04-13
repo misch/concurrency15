@@ -1,0 +1,351 @@
+** SETTINGS **
+Lock: class assig2.FilterLock
+Case: non-volatile counter
+Counter value: 300000
+#threads: 4
+
+** MEASUREMENTS **
+Accesses: [74602|75644|75472|74282|]
+Lowest number of accesses: 74282
+Highest number of accesses: 75644
+Execution time: 357.20802499999996 ms
+
+
+** SETTINGS **
+Lock: class assig3.CASLock
+Case: non-volatile counter
+Counter value: 300000
+#threads: 4
+
+** MEASUREMENTS **
+Accesses: [86959|78191|61224|73626|]
+Lowest number of accesses: 61224
+Highest number of accesses: 86959
+Execution time: 159.264553 ms
+
+
+** SETTINGS **
+Lock: class assig3.CCASLock
+Case: non-volatile counter
+Counter value: 300000
+#threads: 4
+
+** MEASUREMENTS **
+Accesses: [76022|75940|73972|74066|]
+Lowest number of accesses: 73972
+Highest number of accesses: 76022
+Execution time: 96.75771999999999 ms
+
+
+** SETTINGS **
+Lock: class assig2.FilterLock
+Case: non-volatile counter
+Counter value: 300000
+#threads: 4
+
+** MEASUREMENTS **
+Accesses: [74607|75632|74290|75471|]
+Lowest number of accesses: 74290
+Highest number of accesses: 75632
+Execution time: 351.223098 ms
+
+
+** SETTINGS **
+Lock: class assig3.CASLock
+Case: non-volatile counter
+Counter value: 300000
+#threads: 4
+
+** MEASUREMENTS **
+Accesses: [68694|80507|74244|76555|]
+Lowest number of accesses: 68694
+Highest number of accesses: 80507
+Execution time: 177.048225 ms
+
+
+** SETTINGS **
+Lock: class assig3.CCASLock
+Case: non-volatile counter
+Counter value: 300000
+#threads: 4
+
+** MEASUREMENTS **
+Accesses: [73716|74423|75797|76064|]
+Lowest number of accesses: 73716
+Highest number of accesses: 76064
+Execution time: 97.839973 ms
+
+
+** SETTINGS **
+Lock: class assig2.FilterLock
+Case: non-volatile counter
+Counter value: 300000
+#threads: 8
+
+** MEASUREMENTS **
+Accesses: [37561|37533|37597|37387|37540|37488|37614|37280|]
+Lowest number of accesses: 37280
+Highest number of accesses: 37614
+Execution time: 599.358074 ms
+
+
+** SETTINGS **
+Lock: class assig3.CASLock
+Case: non-volatile counter
+Counter value: 300000
+#threads: 8
+
+** MEASUREMENTS **
+Accesses: [61879|41962|42775|48789|21544|25861|35427|21763|]
+Lowest number of accesses: 21544
+Highest number of accesses: 61879
+Execution time: 247.406028 ms
+
+
+** SETTINGS **
+Lock: class assig3.CCASLock
+Case: non-volatile counter
+Counter value: 300000
+#threads: 8
+
+** MEASUREMENTS **
+Accesses: [36530|50411|45055|30098|26379|6088|35250|70189|]
+Lowest number of accesses: 6088
+Highest number of accesses: 70189
+Execution time: 104.624119 ms
+
+
+** SETTINGS **
+Lock: class assig2.FilterLock
+Case: non-volatile counter
+Counter value: 300000
+#threads: 8
+
+** MEASUREMENTS **
+Accesses: [37477|37549|37611|37409|37645|37422|37583|37304|]
+Lowest number of accesses: 37304
+Highest number of accesses: 37645
+Execution time: 588.755826 ms
+
+
+** SETTINGS **
+Lock: class assig3.CASLock
+Case: non-volatile counter
+Counter value: 300000
+#threads: 8
+
+** MEASUREMENTS **
+Accesses: [42931|39762|40077|34745|36352|37054|35726|33353|]
+Lowest number of accesses: 33353
+Highest number of accesses: 42931
+Execution time: 244.427572 ms
+
+
+** SETTINGS **
+Lock: class assig3.CCASLock
+Case: non-volatile counter
+Counter value: 300000
+#threads: 8
+
+** MEASUREMENTS **
+Accesses: [48939|44385|47233|46654|47997|23828|24227|16737|]
+Lowest number of accesses: 16737
+Highest number of accesses: 48939
+Execution time: 104.93789 ms
+
+
+** SETTINGS **
+Lock: class assig2.FilterLock
+Case: volatile counter
+Counter value: 300000
+#threads: 4
+
+** MEASUREMENTS **
+Accesses: [75548|75386|74860|74206|]
+Lowest number of accesses: 74206
+Highest number of accesses: 75548
+Execution time: 354.91858099999996 ms
+
+
+** SETTINGS **
+Lock: class assig3.CASLock
+Case: volatile counter
+Counter value: 300000
+#threads: 4
+
+** MEASUREMENTS **
+Accesses: [65472|73253|76722|84553|]
+Lowest number of accesses: 65472
+Highest number of accesses: 84553
+Execution time: 220.553002 ms
+
+
+** SETTINGS **
+Lock: class assig3.CCASLock
+Case: volatile counter
+Counter value: 300000
+#threads: 4
+
+** MEASUREMENTS **
+Accesses: [26005|122672|143953|7370|]
+Lowest number of accesses: 7370
+Highest number of accesses: 143953
+Execution time: 105.23011299999999 ms
+
+
+** SETTINGS **
+Lock: class assig2.FilterLock
+Case: volatile counter
+Counter value: 300000
+#threads: 4
+
+** MEASUREMENTS **
+Accesses: [74239|74853|75367|75541|]
+Lowest number of accesses: 74239
+Highest number of accesses: 75541
+Execution time: 354.457134 ms
+
+
+** SETTINGS **
+Lock: class assig3.CASLock
+Case: volatile counter
+Counter value: 300000
+#threads: 4
+
+** MEASUREMENTS **
+Accesses: [75356|67132|66736|90776|]
+Lowest number of accesses: 66736
+Highest number of accesses: 90776
+Execution time: 220.733015 ms
+
+
+** SETTINGS **
+Lock: class assig3.CCASLock
+Case: volatile counter
+Counter value: 300000
+#threads: 4
+
+** MEASUREMENTS **
+Accesses: [61660|107765|77599|52976|]
+Lowest number of accesses: 52976
+Highest number of accesses: 107765
+Execution time: 102.314083 ms
+
+
+** SETTINGS **
+Lock: class assig2.FilterLock
+Case: non-volatile counter
+Counter value: 300000
+#threads: 4
+
+** MEASUREMENTS **
+Accesses: [74222|74858|75540|75380|]
+Lowest number of accesses: 74222
+Highest number of accesses: 75540
+Execution time: 353.72608199999996 ms
+
+
+** SETTINGS **
+Lock: class assig3.CASLock
+Case: non-volatile counter
+Counter value: 300000
+#threads: 4
+
+** MEASUREMENTS **
+Accesses: [75260|75809|75173|73758|]
+Lowest number of accesses: 73758
+Highest number of accesses: 75809
+Execution time: 213.381219 ms
+
+
+** SETTINGS **
+Lock: class assig3.CCASLock
+Case: non-volatile counter
+Counter value: 300000
+#threads: 4
+
+** MEASUREMENTS **
+Accesses: [72198|75932|76195|75675|]
+Lowest number of accesses: 72198
+Highest number of accesses: 76195
+Execution time: 93.82029899999999 ms
+
+
+** SETTINGS **
+Lock: class assig2.FilterLock
+Case: volatile counter
+Counter value: 300000
+#threads: 8
+
+** MEASUREMENTS **
+Accesses: [37388|37513|37530|37449|37497|37576|37534|37513|]
+Lowest number of accesses: 37388
+Highest number of accesses: 37576
+Execution time: 590.1397469999999 ms
+
+
+** SETTINGS **
+Lock: class assig3.CASLock
+Case: volatile counter
+Counter value: 300000
+#threads: 8
+
+** MEASUREMENTS **
+Accesses: [52420|46217|47235|28841|27673|31579|35978|30057|]
+Lowest number of accesses: 27673
+Highest number of accesses: 52420
+Execution time: 189.554645 ms
+
+
+** SETTINGS **
+Lock: class assig3.CCASLock
+Case: volatile counter
+Counter value: 300000
+#threads: 8
+
+** MEASUREMENTS **
+Accesses: [71577|86792|2877|1375|1957|18892|89679|26851|]
+Lowest number of accesses: 1375
+Highest number of accesses: 89679
+Execution time: 106.069113 ms
+
+
+** SETTINGS **
+Lock: class assig2.FilterLock
+Case: volatile counter
+Counter value: 300000
+#threads: 8
+
+** MEASUREMENTS **
+Accesses: [37600|37590|37373|37516|37382|37485|37606|37448|]
+Lowest number of accesses: 37373
+Highest number of accesses: 37606
+Execution time: 604.899103 ms
+
+
+** SETTINGS **
+Lock: class assig3.CASLock
+Case: volatile counter
+Counter value: 300000
+#threads: 8
+
+** MEASUREMENTS **
+Accesses: [14288|41781|41967|18910|47581|58621|16011|60841|]
+Lowest number of accesses: 14288
+Highest number of accesses: 60841
+Execution time: 199.76358399999998 ms
+
+
+** SETTINGS **
+Lock: class assig3.CCASLock
+Case: volatile counter
+Counter value: 300000
+#threads: 8
+
+** MEASUREMENTS **
+Accesses: [4203|53510|98874|52997|4044|32079|46613|7680|]
+Lowest number of accesses: 4044
+Highest number of accesses: 98874
+Execution time: 108.861623 ms
+
+

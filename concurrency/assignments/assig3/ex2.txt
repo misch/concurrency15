@@ -1,0 +1,120 @@
+Two locks:
+
+#1: 	 99.236481 ms 	 (2 threads)
+#2: 	 32.628569999999996 ms 	 (2 threads)
+#3: 	 31.71987 ms 	 (2 threads)
+avg: 	54.528307 ms
+
+One lock:
+
+#1: 	 90.927397 ms 	 (2 threads)
+#2: 	 62.1671 ms 	 (2 threads)
+#3: 	 61.741842999999996 ms 	 (2 threads)
+avg: 	71.61211333333333 ms
+
+Lock-free (2 threads only):
+
+#1: 	 36.822756 ms 	 (2 threads)
+#2: 	 23.534114 ms 	 (2 threads)
+#3: 	 22.119632 ms 	 (2 threads)
+avg: 	27.49216733333333 ms
+Two locks:
+
+#1: 	 106.124836 ms 	 (4 threads)
+#2: 	 60.455993 ms 	 (4 threads)
+#3: 	 59.283505999999996 ms 	 (4 threads)
+avg: 	75.28811166666667 ms
+
+One lock:
+
+#1: 	 187.103576 ms 	 (4 threads)
+#2: 	 220.452572 ms 	 (4 threads)
+#3: 	 301.283928 ms 	 (4 threads)
+avg: 	236.28002533333333 ms
+
+Lock-free (2 threads only):
+
+#1: 	 37.687447 ms 	 (2 threads)
+#2: 	 23.681669 ms 	 (2 threads)
+#3: 	 22.027327 ms 	 (2 threads)
+avg: 	27.798814333333336 ms
+Two locks:
+
+#1: 	 156.62995899999999 ms 	 (8 threads)
+#2: 	 124.746263 ms 	 (8 threads)
+#3: 	 120.72540599999999 ms 	 (8 threads)
+avg: 	134.033876 ms
+
+One lock:
+
+#1: 	 464.02575299999995 ms 	 (8 threads)
+#2: 	 246.916652 ms 	 (8 threads)
+#3: 	 229.959273 ms 	 (8 threads)
+avg: 	313.63389266666667 ms
+
+Lock-free (2 threads only):
+
+#1: 	 37.661626999999996 ms 	 (2 threads)
+#2: 	 23.659086 ms 	 (2 threads)
+#3: 	 22.034069 ms 	 (2 threads)
+avg: 	27.784927333333332 ms
+Two locks:
+
+#1: 	 99.431606 ms 	 (2 threads)
+#2: 	 32.769856 ms 	 (2 threads)
+#3: 	 31.701887 ms 	 (2 threads)
+avg: 	54.63444966666667 ms
+
+One lock:
+
+#1: 	 95.00907199999999 ms 	 (2 threads)
+#2: 	 62.223628999999995 ms 	 (2 threads)
+#3: 	 61.229715999999996 ms 	 (2 threads)
+avg: 	72.82080566666666 ms
+
+Lock-free (2 threads only):
+
+#1: 	 37.35397 ms 	 (2 threads)
+#2: 	 23.544307 ms 	 (2 threads)
+#3: 	 22.001628999999998 ms 	 (2 threads)
+avg: 	27.633301999999997 ms
+Two locks:
+
+#1: 	 108.446483 ms 	 (4 threads)
+#2: 	 60.992557 ms 	 (4 threads)
+#3: 	 60.161488999999996 ms 	 (4 threads)
+avg: 	76.53350966666667 ms
+
+One lock:
+
+#1: 	 276.700375 ms 	 (4 threads)
+#2: 	 226.424875 ms 	 (4 threads)
+#3: 	 243.028372 ms 	 (4 threads)
+avg: 	248.717874 ms
+
+Lock-free (2 threads only):
+
+#1: 	 37.334649999999996 ms 	 (2 threads)
+#2: 	 23.539946 ms 	 (2 threads)
+#3: 	 22.104748999999998 ms 	 (2 threads)
+avg: 	27.659781666666664 ms
+Two locks:
+
+#1: 	 164.388655 ms 	 (8 threads)
+#2: 	 122.879556 ms 	 (8 threads)
+#3: 	 124.593896 ms 	 (8 threads)
+avg: 	137.28736899999998 ms
+
+One lock:
+
+#1: 	 604.5582059999999 ms 	 (8 threads)
+#2: 	 247.580242 ms 	 (8 threads)
+#3: 	 231.25536499999998 ms 	 (8 threads)
+avg: 	361.131271 ms
+
+Lock-free (2 threads only):
+
+#1: 	 37.476797 ms 	 (2 threads)
+#2: 	 23.67007 ms 	 (2 threads)
+#3: 	 22.010714 ms 	 (2 threads)
+avg: 	27.719193666666666 ms
