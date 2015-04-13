@@ -1,13 +1,16 @@
 package assig2;
 
+import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicIntegerArray;
+import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.Lock;
 
 /**
  * Implements the generalized Peterson algorithm to lock and unlock shared resources.
  * @author Misch
  *
  */
-public class FilterLock {
+public class FilterLock implements Lock{
 	private int threads;
 	
 	/** holds current level for each thread */
@@ -22,7 +25,10 @@ public class FilterLock {
 		this.victim = new AtomicIntegerArray(threads);
 	}
 	
-	public void lock(int threadID){
+	@Override
+	public void lock(){
+		int threadID = (int)Thread.currentThread().getId() % threads;
+		
 		for (int lvl = 1; lvl < threads; lvl++){
 			level.set(threadID, lvl);
 			victim.set(lvl, threadID);
@@ -43,7 +49,29 @@ public class FilterLock {
 		}
 	}
 	
-	public void unlock(int threadID){
+	@Override
+	public void unlock(){
+		int threadID = (int)Thread.currentThread().getId() % threads;
 		level.set(threadID, 0);
+	}
+
+	@Override
+	public void lockInterruptibly() throws InterruptedException {
+	}
+
+	@Override
+	public Condition newCondition() {
+		return null;
+	}
+
+	@Override
+	public boolean tryLock() {
+		return false;
+	}
+
+	@Override
+	public boolean tryLock(long arg0, TimeUnit arg1)
+			throws InterruptedException {
+		return false;
 	}
 }

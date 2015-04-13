@@ -1,14 +1,16 @@
 package assig2;
 
+import java.util.concurrent.locks.Lock;
+
 /**
  * Implements a simple counter that can be locked using the generalized Peterson algorithm (filter lock).
  * @author Misch
  *
  */
 public abstract class Counter {
-	protected FilterLock lock;
+	protected Lock lock;
 	
-	public Counter(FilterLock lock){
+	public Counter(Lock lock){
 		this.lock = lock;
 	}
 	

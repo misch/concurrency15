@@ -1,6 +1,7 @@
 package assig2;
 
 import java.util.ArrayList;
+import java.util.concurrent.locks.Lock;
 
 public class Ex1 {
 	static int[] counterAccess;
@@ -12,7 +13,7 @@ public class Ex1 {
 		}
 		ArrayList<Thread> incThreads = new ArrayList<Thread>();
 		int nThreads = Integer.parseInt(args[0]);
-		FilterLock lock = new FilterLock(nThreads);
+		Lock lock = new FilterLock(nThreads);
 		
 		counterAccess = new int[nThreads];
 		boolean volatileCounter = Boolean.parseBoolean(args[1]);
@@ -31,7 +32,7 @@ public class Ex1 {
 
 		// create threads
 		for (int i = 0; i < nThreads; i++){
-			Thread incThread = new Thread(new Incrementor(counter, i, counterAccess));
+			Thread incThread = new Thread(new Incrementor(counter, counterAccess));
 			incThreads.add(incThread);
 		}
 		

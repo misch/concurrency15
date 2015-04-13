@@ -1,5 +1,7 @@
 package assig2;
 
+import java.util.concurrent.locks.Lock;
+
 /**
  * Implements a {@link Counter} whose value is volatile.
  * @author Misch
@@ -8,7 +10,7 @@ package assig2;
 public class VolatileCounter extends Counter {
 	volatile int value;
 	
-	public VolatileCounter(FilterLock lock){
+	public VolatileCounter(Lock lock){
 		super(lock);
 	}
 	
