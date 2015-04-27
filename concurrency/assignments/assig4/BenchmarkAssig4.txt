@@ -1,0 +1,98 @@
+No number of threads was specified. Using default of: 2 threads.
+Fine-grained lock:
+
+#1: 	 516.574757 ms 	 (2 threads)
+#2: 	 341.000021 ms 	 (2 threads)
+#3: 	 326.380334 ms 	 (2 threads)
+#4: 	 346.737602 ms 	 (2 threads)
+#5: 	 287.85948099999996 ms 	 (2 threads)
+avg: 	363.71043899999995 ms
+Optimistic Fine-grained lock:
+
+#1: 	 280.639968 ms 	 (2 threads)
+#2: 	 105.25488899999999 ms 	 (2 threads)
+#3: 	 95.28335299999999 ms 	 (2 threads)
+#4: 	 92.294646 ms 	 (2 threads)
+#5: 	 86.53622999999999 ms 	 (2 threads)
+avg: 	132.00181719999998 ms
+No number of threads was specified. Using default of: 2 threads.
+Fine-grained lock:
+
+#1: 	 513.928577 ms 	 (2 threads)
+#2: 	 360.535531 ms 	 (2 threads)
+#3: 	 347.46660199999997 ms 	 (2 threads)
+#4: 	 342.799581 ms 	 (2 threads)
+#5: 	 286.913269 ms 	 (2 threads)
+avg: 	370.328712 ms
+Optimistic Fine-grained lock:
+
+#1: 	 214.662219 ms 	 (2 threads)
+#2: 	 88.10262 ms 	 (2 threads)
+#3: 	 99.078216 ms 	 (2 threads)
+#4: 	 96.462569 ms 	 (2 threads)
+#5: 	 93.217033 ms 	 (2 threads)
+avg: 	118.3045314 ms
+Fine-grained lock:
+
+#1: 	 1328.634826 ms 	 (4 threads)
+#2: 	 1391.4364819999998 ms 	 (4 threads)
+#3: 	 1447.040491 ms 	 (4 threads)
+#4: 	 1432.4388279999998 ms 	 (4 threads)
+#5: 	 1428.396431 ms 	 (4 threads)
+avg: 	1405.5894115999997 ms
+Optimistic Fine-grained lock:
+
+#1: 	 139.56976899999998 ms 	 (4 threads)
+#2: 	 65.899057 ms 	 (4 threads)
+#3: 	 98.40928 ms 	 (4 threads)
+#4: 	 91.12870699999999 ms 	 (4 threads)
+#5: 	 92.800736 ms 	 (4 threads)
+avg: 	97.5615098 ms
+Fine-grained lock:
+
+#1: 	 1365.640001 ms 	 (4 threads)
+#2: 	 1455.0432879999998 ms 	 (4 threads)
+#3: 	 1413.161451 ms 	 (4 threads)
+#4: 	 1433.8384119999998 ms 	 (4 threads)
+#5: 	 1462.866021 ms 	 (4 threads)
+avg: 	1426.1098345999999 ms
+Optimistic Fine-grained lock:
+
+#1: 	 185.23126 ms 	 (4 threads)
+#2: 	 104.712716 ms 	 (4 threads)
+#3: 	 98.06026299999999 ms 	 (4 threads)
+#4: 	 86.11368 ms 	 (4 threads)
+#5: 	 88.30733 ms 	 (4 threads)
+avg: 	112.48504979999998 ms
+Fine-grained lock:
+
+#1: 	 1602.785784 ms 	 (8 threads)
+#2: 	 1515.716134 ms 	 (8 threads)
+#3: 	 1507.443315 ms 	 (8 threads)
+#4: 	 1456.8528019999999 ms 	 (8 threads)
+#5: 	 1518.379084 ms 	 (8 threads)
+avg: 	1520.2354237999998 ms
+Optimistic Fine-grained lock:
+
+#1: 	 324.674875 ms 	 (8 threads)
+#2: 	 124.002579 ms 	 (8 threads)
+#3: 	 122.996963 ms 	 (8 threads)
+#4: 	 120.703229 ms 	 (8 threads)
+#5: 	 117.456353 ms 	 (8 threads)
+avg: 	161.9667998 ms
+Fine-grained lock:
+
+#1: 	 1595.1055099999999 ms 	 (8 threads)
+#2: 	 1561.261831 ms 	 (8 threads)
+#3: 	 1484.5246809999999 ms 	 (8 threads)
+#4: 	 1445.784817 ms 	 (8 threads)
+#5: 	 1474.638954 ms 	 (8 threads)
+avg: 	1512.2631585999998 ms
+Optimistic Fine-grained lock:
+
+#1: 	 323.31562099999996 ms 	 (8 threads)
+#2: 	 122.497249 ms 	 (8 threads)
+#3: 	 125.544872 ms 	 (8 threads)
+#4: 	 114.90537599999999 ms 	 (8 threads)
+#5: 	 118.985642 ms 	 (8 threads)
+avg: 	161.04975199999998 ms
