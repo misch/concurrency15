@@ -29,7 +29,7 @@ public class OptimisticFineGrainedLockList implements IList {
 				// If valid, go on and add node, otherwise reenter the outer loop and try again from scratch
 				if (validate(pred,succ)){
 					// If the key is already present, don't add the new node
-					if (succ.key == key){
+					if (pred.key == key){
 						return false;
 					}
 					// Otherwise, add it
