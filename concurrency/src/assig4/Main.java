@@ -24,14 +24,9 @@ public class Main {
 			runNTimes(measureNTimes, nThreads, list, numberOfKeysPerThread);
 			
 
-	
-//			queue = new OneLockMultThreadQueue(queueSize);
-//			System.out.println("\nOne lock:");
-//			runNTimes(measureNTimes, nThreads, queue);
-//			
-//			System.out.println("\nLock-free (2 threads only):");
-//			queue = new LockFreeTwoThreadQueue(queueSize);
-//			runNTimes(measureNTimes, 2, queue);
+			list = new OptimisticFineGrainedLockList();
+			System.out.println("Optimistic Fine-grained lock:");
+			runNTimes(measureNTimes, nThreads, list, numberOfKeysPerThread);
 		}
 		
 		private static void runNTimes(int n, int nThreads, IList list, int nKeysPerThread) throws InterruptedException{
