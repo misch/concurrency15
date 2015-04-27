@@ -3,16 +3,7 @@ package assig4;
 import java.util.ArrayList;
 import java.util.Random;
 
-import assig3.DeqRunnable;
-import assig3.EnqRunnable;
-import assig3.IQueue;
-import assig3.LockFreeTwoThreadQueue;
-import assig3.OneLockMultThreadQueue;
-import assig3.TwoLockMultThreadQueue;
-
 public class Main {
-	private static int nIntegers = 100000;
-
 	public static void main(String[] args) throws InterruptedException {
 			int nThreads;
 			if((args.length == 1)){
@@ -26,14 +17,14 @@ public class Main {
 			int nRandomNumbers = 100000;
 			int measureNTimes = 5;
 			
-			int[] keysToAdd = new int[nRandomNumbers/nThreads];
-			int[] keysToRemove = new int[nRandomNumbers/nThreads];
+			int numberOfKeysPerThread = nRandomNumbers/nThreads;
 			
 			IList list = new FineGrainedLockList();
 			System.out.println("Fine-grained lock:");
-			runNTimes(measureNTimes, nThreads, list, keysToAdd, keysToRemove);
+			runNTimes(measureNTimes, nThreads, list, numberOfKeysPerThread);
 			
 
+	
 //			queue = new OneLockMultThreadQueue(queueSize);
 //			System.out.println("\nOne lock:");
 //			runNTimes(measureNTimes, nThreads, queue);
@@ -43,19 +34,30 @@ public class Main {
 //			runNTimes(measureNTimes, 2, queue);
 		}
 		
-		private static void runNTimes(int n, int nThreads, IList list, int[] keysToAdd, int[] keysToRemove) throws InterruptedException{
+		private static void runNTimes(int n, int nThreads, IList list, int nKeysPerThread) throws InterruptedException{
 			double avgRuntime = 0;
 			for (int i=0; i<n; i++){
 				System.out.print("\n#" + (i+1) + ": \t ");
-				double runtime = runThreads(nThreads, list, keysToAdd, keysToRemove);
+				double runtime = runThreads(nThreads, list, nKeysPerThread);
 				avgRuntime += runtime/(float)(n);
 			}
 			System.out.println("\navg: \t" + avgRuntime + " ms");
 		}
 		
-		private static double runThreads(int nThreads, IList sharedList, int[] keysToAdd, int[] keysToRemove) throws InterruptedException{
+		private static double runThreads(int nThreads, IList sharedList, int nKeysPerThread) throws InterruptedException{
 			ArrayList<Thread> threads = new ArrayList<Thread>();
 			for(int i = 0; i<nThreads/2; i++){
+				
+				// Generate random keys
+				int[] keysToAdd = new int[nKeysPerThread];
+				int[] keysToRemove = new int[nKeysPerThread];
+				
+				Random rndGenerator = new Random();
+				for (int j = 1; j < keysToAdd.length; j++){
+					keysToAdd[j] = rndGenerator.nextInt(101);
+					keysToRemove[j] = rndGenerator.nextInt(101);
+				}
+				
 				threads.add(new Thread(new AddRunnable(sharedList, keysToAdd)));
 				threads.add(new Thread(new RemoveRunnable(sharedList, keysToRemove)));
 			}
