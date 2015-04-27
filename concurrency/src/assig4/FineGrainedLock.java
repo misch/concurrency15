@@ -4,6 +4,12 @@ public class FineGrainedLock implements IList {
 
 	private Node head, tail;
 	
+	public FineGrainedLock(){
+		this.head = new Node(Integer.MIN_VALUE);
+		this.tail = new Node(Integer.MAX_VALUE);
+		this.head.next = tail;
+	}
+	
 	@Override
 	public boolean add(int key) {
 		Node 	pred = null,
@@ -98,5 +104,5 @@ public class FineGrainedLock implements IList {
 		}
 		return false;
 	}
-
+	
 }

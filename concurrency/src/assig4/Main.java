@@ -24,7 +24,7 @@ public class Main {
 			}
 			
 			int nRandomNumbers = 100000;
-			int measureNTimes = 3;
+			int measureNTimes = 5;
 			
 			int[] keysToAdd = new int[nRandomNumbers/nThreads];
 			int[] keysToRemove = new int[nRandomNumbers/nThreads];
