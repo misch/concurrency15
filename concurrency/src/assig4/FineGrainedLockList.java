@@ -1,10 +1,10 @@
 package assig4;
 
-public class FineGrainedLock implements IList {
+public class FineGrainedLockList implements IList {
 
 	private Node head, tail;
 	
-	public FineGrainedLock(){
+	public FineGrainedLockList(){
 		this.head = new Node(Integer.MIN_VALUE);
 		this.tail = new Node(Integer.MAX_VALUE);
 		this.head.next = tail;

@@ -29,7 +29,7 @@ public class Main {
 			int[] keysToAdd = new int[nRandomNumbers/nThreads];
 			int[] keysToRemove = new int[nRandomNumbers/nThreads];
 			
-			IList list = new FineGrainedLock();
+			IList list = new FineGrainedLockList();
 			System.out.println("Fine-grained lock:");
 			runNTimes(measureNTimes, nThreads, list, keysToAdd, keysToRemove);
 			
