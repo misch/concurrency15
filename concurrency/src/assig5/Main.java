@@ -1,7 +1,7 @@
 package assig5;
 
 import java.util.ArrayList;
-import java.util.Random;
+import java.util.concurrent.CyclicBarrier;
 
 public class Main {
 	public static void main(String[] args) throws InterruptedException {
@@ -25,7 +25,7 @@ public class Main {
 			
 
 			queue = new UnboundedLockFreeQueue();
-			System.out.println("lock-free queue:");
+			System.out.println("\nlock-free queue:");
 			runNTimes(measureNTimes, nThreads, queue, numberOfOperationsPerThread);
 		}
 		
@@ -34,22 +34,32 @@ public class Main {
 			for (int i=0; i<n; i++){
 				System.out.print("\n#" + (i+1) + ": \t ");
 				double runtime = runThreads(nThreads, queue, nOperationsPerThread);
-				avgRuntime = (i > 0) ? avgRuntime+runtime/(float)(n-1) : 0;
+				avgRuntime = (i > 0) ? avgRuntime+runtime/(float)(n-1) : 0; // leave out first run when calculating average time
 			}
 			System.out.println("\navg: \t" + avgRuntime + " ms");
 		}
 		
 		private static double runThreads(int nThreads, IQueue queue, int nOperationsPerThread) throws InterruptedException{
 			ArrayList<Thread> threads = new ArrayList<Thread>();
-			for(int i = 0; i<nThreads/2; i++){
-				threads.add(new Thread(new EnqRunnable(queue, nOperationsPerThread)));
-			}
+			final Timer timer = new Timer();
+			
+			// define a barrier - the timer will only be started after all the threads are ready.
+			CyclicBarrier barrier = new CyclicBarrier(nThreads,new Runnable(){
+				@Override
+				public void run() {
+					timer.startTime = System.nanoTime();
+				}
+			});
+
 			
 			for(int i = 0; i<nThreads/2; i++){
-				threads.add(new Thread(new DeqRunnable(queue, nOperationsPerThread)));
+				threads.add(new Thread(new EnqRunnable(queue, nOperationsPerThread, barrier)));
+			}	
+			
+			for(int i = 0; i<nThreads/2; i++){
+			threads.add(new Thread(new DeqRunnable(queue, nOperationsPerThread, barrier)));
 			}
 			
-			long startTime = System.nanoTime();
 			for(Thread thread : threads){
 				thread.start();
 			}
@@ -57,11 +67,11 @@ public class Main {
 			for(Thread thread : threads){
 				thread.join();
 			}
-			long endTime = System.nanoTime();
 			
-			double runTime = util.TimeMeasure.getExecutionTime(startTime, endTime);
+			timer.endTime = System.nanoTime();
+			
+			double runTime = util.TimeMeasure.getExecutionTime(timer.startTime, timer.endTime);
 			System.out.print(runTime + " ms \t (" + nThreads + " threads)");
 			return runTime;
 		}
-
 }
