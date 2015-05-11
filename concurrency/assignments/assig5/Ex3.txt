@@ -1,0 +1,26 @@
+From the measured times it can be concluded that the lock-free implementation of the unbounded queue provides a quite significant speedup when there's many threads. However, we can see from the case with 2 threads, that it also introduces quite some overhead. I am not sure what the reason for this behaviour is - it could for example be connected to the amount of comparisons that have to be done within the methods. In the case of the lock-based queue, we have only one single comparison within the dequeue-method, whereas we have much more in the lock-free queue.
+
+All the measured times are the average of 4 runs (the first of the 5 runs was always ignored in the calculation of the average runtime). Also, the timer was started only when all the threads were ready (barrier mechanism in the Runnable's run()-method).
+
+2 threads 			| trial 1 	| trial 2 	| trial 3 	| trial 4 	| avg speedup
+--------------------------------------------------------------------| ------------
+lock-based queue 	| 25.792 ms | 27.196 ms | 25.820 ms | 25.746 ms | 0.786
+lock-free queue 	| 33.376 ms | 33.221 ms | 33.218 ms | 33.217 ms |
+
+
+4 threads 			| trial 1 	| trial 2 	| trial 3 	| trial 4 	| avg speedup
+--------------------------------------------------------------------| ------------
+lock-based queue 	| 44.718 ms | 44.900 ms | 46.462 ms | 37.218 ms | 2.062
+lock-free queue 	| 21.560 ms | 20.686 ms | 20.966 ms | 20.843 ms |
+
+
+8 threads 			| trial 1 	| trial 2 	| trial 3 	| trial 4 	| avg speedup
+--------------------------------------------------------------------| ------------
+lock-based queue 	| 36.347 ms | 37.143 ms | 36.191 ms | 37.298 ms | 1.492
+lock-free queue 	| 24.599 ms | 24.636 ms | 23.897 ms | 25.379 ms |
+
+
+16 threads 			| trial 1 	| trial 2 	| trial 3 	| trial 4 	| avg speedup
+--------------------------------------------------------------------| ------------
+lock-based queue 	| 38.729 ms | 37.797 ms | 37.556 ms | 38.704 ms | 3.125
+lock-free queue 	| 12.576 ms | 11.936 ms | 12.290 ms | 12.102 ms |
