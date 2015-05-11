@@ -1,0 +1,1 @@
+Yes. The first action of the enqueue-method is an atomic getAndIncrement. This ensures that if a thread A starts enq() before thread B, the position of the element from thread A will be before the one of thread B. Therefore, the element that will be dequeued first, will always be the one enqueued by thread A.
