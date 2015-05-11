@@ -34,7 +34,7 @@ public class Main {
 			for (int i=0; i<n; i++){
 				System.out.print("\n#" + (i+1) + ": \t ");
 				double runtime = runThreads(nThreads, queue, nOperationsPerThread);
-				avgRuntime += runtime/(float)(n);
+				avgRuntime = (i > 0) ? avgRuntime+runtime/(float)(n-1) : 0;
 			}
 			System.out.println("\navg: \t" + avgRuntime + " ms");
 		}
