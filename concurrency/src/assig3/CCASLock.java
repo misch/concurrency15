@@ -26,27 +26,21 @@ public class CCASLock implements Lock {
 	}
 
 	@Override
-	public void lockInterruptibly() throws InterruptedException {
-		// TODO Auto-generated method stub
-
-	}
+	public void lockInterruptibly() throws InterruptedException {}
 
 	@Override
 	public Condition newCondition() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public boolean tryLock() {
-		// TODO Auto-generated method stub
 		return false;
 	}
 
 	@Override
 	public boolean tryLock(long arg0, TimeUnit arg1)
 			throws InterruptedException {
-		// TODO Auto-generated method stub
 		return false;
 	}
 
