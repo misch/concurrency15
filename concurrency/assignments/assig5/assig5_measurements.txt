@@ -1,0 +1,739 @@
+lock-based queue:
+
+#1: 	 Exception in thread "Thread-1" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+155.799903 ms 	 (2 threads)
+#2: 	 47.25056 ms 	 (2 threads)
+#3: 	 14.714397 ms 	 (2 threads)
+#4: 	 14.697903 ms 	 (2 threads)
+#5: 	 19.683719999999997 ms 	 (2 threads)
+avg: 	24.086644999999997 ms
+
+lock-free queue:
+
+#1: 	 Exception in thread "Thread-11" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockFreeQueue.deq(UnboundedLockFreeQueue.java:48)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+97.984742 ms 	 (2 threads)
+#2: 	 56.422117 ms 	 (2 threads)
+#3: 	 24.880246 ms 	 (2 threads)
+#4: 	 24.690426 ms 	 (2 threads)
+#5: 	 19.680127 ms 	 (2 threads)
+avg: 	31.418229 ms
+
+lock-based queue:
+
+#1: 	 Exception in thread "Thread-1" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+154.638892 ms 	 (2 threads)
+#2: 	 47.867393 ms 	 (2 threads)
+#3: 	 14.672813 ms 	 (2 threads)
+#4: 	 14.736383 ms 	 (2 threads)
+#5: 	 19.636563 ms 	 (2 threads)
+avg: 	24.228288 ms
+
+lock-free queue:
+
+#1: 	 Exception in thread "Thread-11" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockFreeQueue.deq(UnboundedLockFreeQueue.java:48)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+97.478313 ms 	 (2 threads)
+#2: 	 55.985276 ms 	 (2 threads)
+#3: 	 24.825592999999998 ms 	 (2 threads)
+#4: 	 24.703643 ms 	 (2 threads)
+#5: 	 19.779954 ms 	 (2 threads)
+avg: 	31.3236165 ms
+
+lock-based queue:
+
+#1: 	 Exception in thread "Thread-1" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+155.072201 ms 	 (2 threads)
+#2: 	 47.179013 ms 	 (2 threads)
+#3: 	 14.661636 ms 	 (2 threads)
+#4: 	 14.653196 ms 	 (2 threads)
+#5: 	 19.644937 ms 	 (2 threads)
+avg: 	24.034695499999998 ms
+
+lock-free queue:
+
+#1: 	 Exception in thread "Thread-11" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockFreeQueue.deq(UnboundedLockFreeQueue.java:48)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+98.32173 ms 	 (2 threads)
+#2: 	 56.444593 ms 	 (2 threads)
+#3: 	 24.63741 ms 	 (2 threads)
+#4: 	 24.822796999999998 ms 	 (2 threads)
+#5: 	 19.671872 ms 	 (2 threads)
+avg: 	31.394168 ms
+
+lock-based queue:
+
+#1: 	 Exception in thread "Thread-1" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+153.781473 ms 	 (2 threads)
+#2: 	 47.255793 ms 	 (2 threads)
+#3: 	 14.760693 ms 	 (2 threads)
+#4: 	 14.665797 ms 	 (2 threads)
+#5: 	 19.658846 ms 	 (2 threads)
+avg: 	24.08528225 ms
+
+lock-free queue:
+
+#1: 	 Exception in thread "Thread-11" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockFreeQueue.deq(UnboundedLockFreeQueue.java:48)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+97.39734399999999 ms 	 (2 threads)
+#2: 	 56.023432 ms 	 (2 threads)
+#3: 	 24.622042999999998 ms 	 (2 threads)
+#4: 	 24.713296999999997 ms 	 (2 threads)
+#5: 	 19.643083999999998 ms 	 (2 threads)
+avg: 	31.250464 ms
+
+lock-based queue:
+
+#1: 	 Exception in thread "Thread-3" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-2" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+143.746683 ms 	 (4 threads)
+#2: 	 51.843844 ms 	 (4 threads)
+#3: 	 24.197193 ms 	 (4 threads)
+#4: 	 25.131843 ms 	 (4 threads)
+#5: 	 29.951349999999998 ms 	 (4 threads)
+avg: 	32.781057499999996 ms
+
+lock-free queue:
+
+#1: 	 Exception in thread "Thread-23" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockFreeQueue.deq(UnboundedLockFreeQueue.java:48)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-22" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockFreeQueue.deq(UnboundedLockFreeQueue.java:48)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+54.036859 ms 	 (4 threads)
+#2: 	 39.666696 ms 	 (4 threads)
+#3: 	 15.512690999999998 ms 	 (4 threads)
+#4: 	 15.33874 ms 	 (4 threads)
+#5: 	 11.82176 ms 	 (4 threads)
+avg: 	20.584971749999998 ms
+
+lock-based queue:
+
+#1: 	 Exception in thread "Thread-3" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-2" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+150.076086 ms 	 (4 threads)
+#2: 	 48.996519 ms 	 (4 threads)
+#3: 	 25.070107 ms 	 (4 threads)
+#4: 	 27.162862999999998 ms 	 (4 threads)
+#5: 	 29.166179999999997 ms 	 (4 threads)
+avg: 	32.59891725 ms
+
+lock-free queue:
+
+#1: 	 Exception in thread "Thread-22" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockFreeQueue.deq(UnboundedLockFreeQueue.java:48)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-23" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockFreeQueue.deq(UnboundedLockFreeQueue.java:48)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+54.095172999999996 ms 	 (4 threads)
+#2: 	 45.911626999999996 ms 	 (4 threads)
+#3: 	 20.208973 ms 	 (4 threads)
+#4: 	 15.298649999999999 ms 	 (4 threads)
+#5: 	 12.317623999999999 ms 	 (4 threads)
+avg: 	23.434218499999997 ms
+
+lock-based queue:
+
+#1: 	 Exception in thread "Thread-2" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-3" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+187.19543199999998 ms 	 (4 threads)
+#2: 	 56.12428 ms 	 (4 threads)
+#3: 	 25.783333 ms 	 (4 threads)
+#4: 	 29.767896 ms 	 (4 threads)
+#5: 	 29.790202999999998 ms 	 (4 threads)
+avg: 	35.366428 ms
+
+lock-free queue:
+
+#1: 	 Exception in thread "Thread-23" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockFreeQueue.deq(UnboundedLockFreeQueue.java:48)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-22" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockFreeQueue.deq(UnboundedLockFreeQueue.java:48)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+53.914516 ms 	 (4 threads)
+#2: 	 42.327897 ms 	 (4 threads)
+#3: 	 18.32135 ms 	 (4 threads)
+#4: 	 15.315099 ms 	 (4 threads)
+#5: 	 12.245002999999999 ms 	 (4 threads)
+avg: 	22.05233725 ms
+
+lock-based queue:
+
+#1: 	 Exception in thread "Thread-2" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-3" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+159.926996 ms 	 (4 threads)
+#2: 	 53.995422999999995 ms 	 (4 threads)
+#3: 	 24.006943 ms 	 (4 threads)
+#4: 	 26.892512999999997 ms 	 (4 threads)
+#5: 	 33.37649 ms 	 (4 threads)
+avg: 	34.56784225 ms
+
+lock-free queue:
+
+#1: 	 Exception in thread "Thread-23" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockFreeQueue.deq(UnboundedLockFreeQueue.java:48)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-22" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockFreeQueue.deq(UnboundedLockFreeQueue.java:48)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+51.993959 ms 	 (4 threads)
+#2: 	 43.367014 ms 	 (4 threads)
+#3: 	 19.332154 ms 	 (4 threads)
+#4: 	 12.404532999999999 ms 	 (4 threads)
+#5: 	 17.177014 ms 	 (4 threads)
+avg: 	23.07017875 ms
+
+lock-based queue:
+
+#1: 	 Exception in thread "Thread-4" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-7" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-5" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-6" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+190.930069 ms 	 (8 threads)
+#2: 	 73.09657 ms 	 (8 threads)
+#3: 	 25.849971999999998 ms 	 (8 threads)
+#4: 	 26.975163 ms 	 (8 threads)
+#5: 	 25.623867 ms 	 (8 threads)
+avg: 	37.886393 ms
+
+lock-free queue:
+
+#1: 	 Exception in thread "Thread-46" Exception in thread "Thread-44" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockFreeQueue.deq(UnboundedLockFreeQueue.java:48)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-47" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockFreeQueue.deq(UnboundedLockFreeQueue.java:48)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-45" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockFreeQueue.deq(UnboundedLockFreeQueue.java:48)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockFreeQueue.deq(UnboundedLockFreeQueue.java:48)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+45.528593 ms 	 (8 threads)
+#2: 	 66.435883 ms 	 (8 threads)
+#3: 	 114.09931499999999 ms 	 (8 threads)
+#4: 	 11.556586999999999 ms 	 (8 threads)
+#5: 	 11.642866999999999 ms 	 (8 threads)
+avg: 	50.933662999999996 ms
+
+lock-based queue:
+
+#1: 	 Exception in thread "Thread-7" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-5" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-4" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-6" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+219.695616 ms 	 (8 threads)
+#2: 	 70.659493 ms 	 (8 threads)
+#3: 	 28.15263 ms 	 (8 threads)
+#4: 	 25.757427999999997 ms 	 (8 threads)
+#5: 	 25.46387 ms 	 (8 threads)
+avg: 	37.508355249999994 ms
+
+lock-free queue:
+
+#1: 	 Exception in thread "Thread-45" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockFreeQueue.deq(UnboundedLockFreeQueue.java:48)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-47" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockFreeQueue.deq(UnboundedLockFreeQueue.java:48)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-44" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockFreeQueue.deq(UnboundedLockFreeQueue.java:48)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-46" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockFreeQueue.deq(UnboundedLockFreeQueue.java:48)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+45.837869999999995 ms 	 (8 threads)
+#2: 	 64.237019 ms 	 (8 threads)
+#3: 	 115.44595899999999 ms 	 (8 threads)
+#4: 	 12.410577 ms 	 (8 threads)
+#5: 	 12.054253 ms 	 (8 threads)
+avg: 	51.03695199999999 ms
+
+lock-based queue:
+
+#1: 	 Exception in thread "Thread-6" Exception in thread "Thread-4" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-5" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-7" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+206.232387 ms 	 (8 threads)
+#2: 	 74.59710299999999 ms 	 (8 threads)
+#3: 	 24.804199 ms 	 (8 threads)
+#4: 	 28.158731 ms 	 (8 threads)
+#5: 	 24.93622 ms 	 (8 threads)
+avg: 	38.12406325 ms
+
+lock-free queue:
+
+#1: 	 Exception in thread "Thread-45" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockFreeQueue.deq(UnboundedLockFreeQueue.java:48)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-47" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockFreeQueue.deq(UnboundedLockFreeQueue.java:48)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-46" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockFreeQueue.deq(UnboundedLockFreeQueue.java:48)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-44" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockFreeQueue.deq(UnboundedLockFreeQueue.java:48)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+46.903597 ms 	 (8 threads)
+#2: 	 62.102273 ms 	 (8 threads)
+#3: 	 115.04284899999999 ms 	 (8 threads)
+#4: 	 11.956804 ms 	 (8 threads)
+#5: 	 11.78139 ms 	 (8 threads)
+avg: 	50.220828999999995 ms
+
+lock-based queue:
+
+#1: 	 Exception in thread "Thread-4" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-5" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-7" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-6" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+194.541386 ms 	 (8 threads)
+#2: 	 74.86139 ms 	 (8 threads)
+#3: 	 24.834556 ms 	 (8 threads)
+#4: 	 29.280879 ms 	 (8 threads)
+#5: 	 26.07866 ms 	 (8 threads)
+avg: 	38.763871249999994 ms
+
+lock-free queue:
+
+#1: 	 Exception in thread "Thread-47" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockFreeQueue.deq(UnboundedLockFreeQueue.java:48)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-44" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockFreeQueue.deq(UnboundedLockFreeQueue.java:48)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-46" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockFreeQueue.deq(UnboundedLockFreeQueue.java:48)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+74.152267 ms 	 (8 threads)
+#2: 	 18.58729 ms 	 (8 threads)
+#3: 	 95.877893 ms 	 (8 threads)
+#4: 	 11.593226 ms 	 (8 threads)
+#5: 	 11.898697 ms 	 (8 threads)
+avg: 	34.4892765 ms
+
+lock-based queue:
+
+#1: 	 Exception in thread "Thread-10" Exception in thread "Thread-8" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-13" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-11" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-9" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-14" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-15" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-12" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+172.785036 ms 	 (16 threads)
+#2: 	 68.868673 ms 	 (16 threads)
+#3: 	 35.161347 ms 	 (16 threads)
+#4: 	 73.052086 ms 	 (16 threads)
+#5: 	 21.288923999999998 ms 	 (16 threads)
+avg: 	49.592757500000005 ms
+
+lock-free queue:
+
+#1: 	 Exception in thread "Thread-93" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockFreeQueue.deq(UnboundedLockFreeQueue.java:48)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-90" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockFreeQueue.deq(UnboundedLockFreeQueue.java:48)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-88" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockFreeQueue.deq(UnboundedLockFreeQueue.java:48)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-89" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockFreeQueue.deq(UnboundedLockFreeQueue.java:48)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-91" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockFreeQueue.deq(UnboundedLockFreeQueue.java:48)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-92" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockFreeQueue.deq(UnboundedLockFreeQueue.java:48)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+63.164367 ms 	 (16 threads)
+#2: 	 16.143124 ms 	 (16 threads)
+#3: 	 14.83648 ms 	 (16 threads)
+#4: 	 14.95205 ms 	 (16 threads)
+#5: 	 14.308055999999999 ms 	 (16 threads)
+avg: 	15.0599275 ms
+
+lock-based queue:
+
+#1: 	 Exception in thread "Thread-8" Exception in thread "Thread-10" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-9" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-11" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-13" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-15" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-12" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-14" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+204.806569 ms 	 (16 threads)
+#2: 	 87.322199 ms 	 (16 threads)
+#3: 	 34.225035999999996 ms 	 (16 threads)
+#4: 	 79.841613 ms 	 (16 threads)
+#5: 	 21.612386 ms 	 (16 threads)
+avg: 	55.7503085 ms
+
+lock-free queue:
+
+#1: 	 Exception in thread "Thread-92" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockFreeQueue.deq(UnboundedLockFreeQueue.java:48)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-89" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockFreeQueue.deq(UnboundedLockFreeQueue.java:48)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-95" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockFreeQueue.deq(UnboundedLockFreeQueue.java:48)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-88" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockFreeQueue.deq(UnboundedLockFreeQueue.java:48)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-90" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockFreeQueue.deq(UnboundedLockFreeQueue.java:48)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-94" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockFreeQueue.deq(UnboundedLockFreeQueue.java:48)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-93" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockFreeQueue.deq(UnboundedLockFreeQueue.java:48)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+64.805336 ms 	 (16 threads)
+#2: 	 17.659129999999998 ms 	 (16 threads)
+#3: 	 15.582635999999999 ms 	 (16 threads)
+#4: 	 15.1031 ms 	 (16 threads)
+#5: 	 15.100646999999999 ms 	 (16 threads)
+avg: 	15.861378249999998 ms
+
+lock-based queue:
+
+#1: 	 Exception in thread "Thread-10" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-15" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-11" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-14" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-13" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-9" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-8" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-12" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+172.692826 ms 	 (16 threads)
+#2: 	 77.97743299999999 ms 	 (16 threads)
+#3: 	 35.028976 ms 	 (16 threads)
+#4: 	 75.81968599999999 ms 	 (16 threads)
+#5: 	 21.88993 ms 	 (16 threads)
+avg: 	52.67900624999999 ms
+
+lock-free queue:
+
+#1: 	 Exception in thread "Thread-88" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockFreeQueue.deq(UnboundedLockFreeQueue.java:48)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-92" Exception in thread "Thread-93" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockFreeQueue.deq(UnboundedLockFreeQueue.java:48)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockFreeQueue.deq(UnboundedLockFreeQueue.java:48)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-95" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockFreeQueue.deq(UnboundedLockFreeQueue.java:48)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-94" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockFreeQueue.deq(UnboundedLockFreeQueue.java:48)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-90" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockFreeQueue.deq(UnboundedLockFreeQueue.java:48)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-91" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockFreeQueue.deq(UnboundedLockFreeQueue.java:48)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-89" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockFreeQueue.deq(UnboundedLockFreeQueue.java:48)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+45.344823 ms 	 (16 threads)
+#2: 	 15.604638999999999 ms 	 (16 threads)
+#3: 	 15.142002999999999 ms 	 (16 threads)
+#4: 	 15.186817 ms 	 (16 threads)
+#5: 	 15.674819999999999 ms 	 (16 threads)
+avg: 	15.402069749999999 ms
+
+lock-based queue:
+
+#1: 	 Exception in thread "Thread-9" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-8" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-11" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-10" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-12" Exception in thread "Thread-13" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-14" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-15" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockBasedQueue.deq(UnboundedLockBasedQueue.java:38)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+240.074245 ms 	 (16 threads)
+#2: 	 80.69817599999999 ms 	 (16 threads)
+#3: 	 33.922453 ms 	 (16 threads)
+#4: 	 81.037953 ms 	 (16 threads)
+#5: 	 21.155586 ms 	 (16 threads)
+avg: 	54.20354199999999 ms
+
+lock-free queue:
+
+#1: 	 Exception in thread "Thread-93" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockFreeQueue.deq(UnboundedLockFreeQueue.java:48)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-95" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockFreeQueue.deq(UnboundedLockFreeQueue.java:48)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+Exception in thread "Thread-92" Exception in thread "Thread-88" Exception in thread "Thread-94" java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockFreeQueue.deq(UnboundedLockFreeQueue.java:48)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockFreeQueue.deq(UnboundedLockFreeQueue.java:48)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+java.lang.RuntimeException: Queue empty.
+	at assig5.UnboundedLockFreeQueue.deq(UnboundedLockFreeQueue.java:48)
+	at assig5.DeqRunnable.run(DeqRunnable.java:16)
+	at java.lang.Thread.run(Thread.java:619)
+83.850287 ms 	 (16 threads)
+#2: 	 13.088063 ms 	 (16 threads)
+#3: 	 13.287683999999999 ms 	 (16 threads)
+#4: 	 12.967253 ms 	 (16 threads)
+#5: 	 13.145513999999999 ms 	 (16 threads)
+avg: 	13.122128499999999 ms
